@@ -6,14 +6,16 @@
 
 <div class="row mb-3">
     <div class="col">
-        <div class="row">
+        <div class="card-deck">
             @foreach ($data as $item)
-                <div class="col-md-6 mb-auto">
-                    <div class="card">
-                        <img src="{{ asset("storage/$item->foto") }}" class="card-img-top" alt="{{ $item->nome }}">
-                        <div class="card-body">
-                            <h5 class="card-title text-success fs-5">{{ $item->nome }}</h5>
-                            <p class="card-text text-success fs-6">{{ $item->biografia }}</p>
+                <div class="card">
+                    <div class="card-body d-flex">
+                        <div class="rounded-circle overflow-hidden flex-shrink-0" style="width: 120px; height: 120px; margin-right: 20px;">
+                            <img src="{{ asset("storage/$item->foto") }}" class="img-fluid" alt="{{ $item->nome }}" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="ml-4">
+                            <h5 class="card-title text fs-5">{{ $item->nome }}</h5>
+                            <p class="card-text text fs-6 text-break">{{ $item->biografia }}</p>
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,7 @@
                     <tr>
                         <td d-none d-md-table-cell>{{ $item->id }}</td>
                         <td>{{ $item->nome }}</td>
-                        <td class="d-none d-md-table-cell">{{ $item->descricao }}</td>
+                        <td class="d-none d-md-table-cell" style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->descricao }}</td>
                         <td>{{ $item->data }}</td>
                         <td>{{ $item->foto }}</td>
                         <td>

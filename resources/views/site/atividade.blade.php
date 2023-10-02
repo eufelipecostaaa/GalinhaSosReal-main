@@ -9,11 +9,11 @@
         <div class="row">
             @foreach ($data as $item)
                 <div class="col-md-auto mb-3">
-                    <div class="card">
+                    <div class="card w-100">
                         <img src="{{ asset("storage/$item->foto") }}" class="card-img-top" alt="{{ $item->nome }}">
                         <div class="card-body">
-                            <h5 class="card-title text-success fs-5">{{ $item->nome }}</h5>
-                            <p class="card-text text-success fs-6">{{ $item->descricao }}</p>
+                            <h5 class="card-title text fs-5">{{ $item->nome }}</h5>
+                            <p class="card-text text fs-6">{{ $item->descricao }}</p>
                         </div>
                     </div>
                 </div>

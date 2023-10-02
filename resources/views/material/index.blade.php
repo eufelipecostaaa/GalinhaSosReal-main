@@ -12,7 +12,7 @@
             <tr>
                 <th scope="col" class="d-none d-md-table-cell">ID</th>
                 <th scope="col">NOME</th>
-                <th scope="col" class="d-none d-md-table-cell">DESCRICAO</th>
+                <th scope="col" class="d-none d-md-table-cell" style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">DESCRICAO</th>
                 <th scope="col">FOTO</th>
                 <th scope="col">AÇÕES</th>
             </tr>
@@ -22,7 +22,7 @@
                     <tr>
                         <td class="d-none d-md-table-cell">{{ $item->id }}</td>
                         <td>{{ $item->nome }}</td>
-                        <td class="d-none d-md-table-cell">{{ $item->descricao }}</td>
+                        <td class="d-none d-md-table-cell" style="max-width: 200px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ $item->descricao }}</td>
                         <td>
                            
                             <a nohref style="cursor:pointer" onclick="showFotoModal('{{ asset('/') }}', '{{ $item->foto }}')">
